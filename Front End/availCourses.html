@@ -3,8 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Course Registration System</title>
+
+    <script type = "text/javascript" src = "myScript.js"></script>
 </head>
 <body>
     <h1>Available Courses</h1>
+    <table align="center" border="1" style = "background-color: antiquewhite">
+        <tr align="center" style = "background-color: #91e2f6;">
+            <th width="100">Course ID</th>
+            <th width="100">Course Name</th>
+            <th width="100">Trainer</th>
+            <th width="150">Duration in Weeks</th>
+        </tr>
+
+        <!---TABLE BODY WHERE THE ROWS WILL BE INSERTED--->
+        <tbody id = "courseTable" align="center"></tbody>
+    </table>
+
+    <script type = "text/javascript">
+        window.onload = function() {
+            showCourses();
+        };
+    </script>
 </body>
 </html>
