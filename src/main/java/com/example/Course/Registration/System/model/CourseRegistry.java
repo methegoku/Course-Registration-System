@@ -20,4 +20,10 @@ public class CourseRegistry {
     private String name;
     private String emailId;
     private String courseName;
+
+    public CourseRegistry(String name, String emailId, String courseName) {
+        this.name = name;
+        this.emailId = emailId;
+        this.courseName = courseName;
+    }
 }
