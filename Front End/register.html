@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration System</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>Register Now</h1>
+    <form action = "http://localhost:8083/courses/register" method = "post">
+        <label for = "name">Enter Your Name: </label>
+        <input type= "text" name = "name" id = "name" placeholder = "Enter Your Name"><br><br>
+
+        <label for = "email">Enter Your Email: </label>
+        <input type= "email" name = "emailId" id = "email" placeholder = "Enter Your Email"><br><br>
+
+        <label for = "course">Choose a Course: </label>
+        <select name = "courseName" id = "course">
+            <option selected disabled value="">Choose a Course</option>
+            <option value = "Core Java">Core Java</option>
+            <option value = "Python Full Stack">Python Full Stack</option>
+            <option value = "Machine Learning">Machine Learning</option>
+            <option value = "Python with ML">Python with ML</option>
+        </select><br><br>
+
+        <button type = "submit">Register</button>
+
+    </form>
+</body>
+</html>
